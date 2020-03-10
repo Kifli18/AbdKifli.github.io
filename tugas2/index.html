@@ -13,7 +13,7 @@
         <meta name="description" content="Tugas Kuliah Komputasi Numerik">
       
       
-        <link rel="canonical" href="https://github.com/Kifli18/tugas1/">
+        <link rel="canonical" href="https://github.com/Kifli18/tugas2/">
       
       
         <meta name="author" content="Abd. Kifli(180411100033)">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Tugas 1 - Tugas Kuliah Komunikasi Numerik</title>
+        <title>Tugas2 - Tugas Kuliah Komunikasi Numerik</title>
       
     
     
@@ -116,7 +116,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#deret-maclaurin" tabindex="0" class="md-skip">
+      <a href="#program-metode-newton-raphson-pada-fungsi-non-linear" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -142,7 +142,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Tugas 1
+                Tugas2
               
             </span>
           
@@ -285,72 +285,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Tugas 1
-      </label>
-    
-    <a href="./" title="Tugas 1" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../tugas1/" title="Tugas 1" class="md-nav__link">
       Tugas 1
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#deret-maclaurin" class="md-nav__link">
-    DERET MACLAURIN
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#soal" class="md-nav__link">
-    Soal
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#penyelesaian" class="md-nav__link">
-    Penyelesaian
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#listing-program" class="md-nav__link">
-    Listing Program
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -373,23 +312,23 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#deret-maclaurin" class="md-nav__link">
-    DERET MACLAURIN
+  <a href="#program-metode-newton-raphson-pada-fungsi-non-linear" class="md-nav__link">
+    Program Metode Newton Raphson Pada Fungsi Non Linear
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#soal" class="md-nav__link">
-    Soal
+  <a href="#metode-newthon-raphson" class="md-nav__link">
+    Metode Newthon Raphson
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#penyelesaian" class="md-nav__link">
-    Penyelesaian
+  <a href="#algoritma-metode-newton-repshon" class="md-nav__link">
+    Algoritma Metode Newton Repshon
   </a>
   
 </li>
@@ -423,97 +362,66 @@
               
                 
                 
-                  <h1>Tugas 1</h1>
+                  <h1>Tugas2</h1>
                 
-                <h2 id="deret-maclaurin"><strong>DERET MACLAURIN</strong><a class="headerlink" href="#deret-maclaurin" title="Permanent link">&para;</a></h2>
-<p>Deret MacLaurin merupakan suatu fungsi f(x) yang memiliki turunan f'(x), f”(x), f”'(x), dan seterusnya yang kontinyu dalam interval I dan a, x I maka untuk x disekitar a yaitu |x – a| &lt; , f(x) dapat diekspansi kedalam Deret Taylor. </p>
-<p>contoh Deret Maclaurin  :
-$$
-f(x) = f(0)+f'(0) \frac{x}{1!}+f''(0) \frac{x^2}{2!}+f'''(0) \frac{x^3}{3!}+...
-$$</p>
-<h4 id="soal"><strong>Soal</strong><a class="headerlink" href="#soal" title="Permanent link">&para;</a></h4>
-<p>tentukan e^2x dengan x = 4 dan ekspansi eror &lt; 0,001.</p>
-<h4 id="penyelesaian"><strong>Penyelesaian</strong><a class="headerlink" href="#penyelesaian" title="Permanent link">&para;</a></h4>
-<p><em>Perhitungan e^2x</em></p>
-<p>Dalam banyak masalah terapan, pilihan basis yang mudah digunakan adalah bilangan irasional <em>e = 2,718281828...</em></p>
-<p>Bilangan ini disebut <em>basis natural</em>. Fungsi <em>f</em>(<em>x</em>) = <em>ex</em> disebut sebagai fungsi eksponensial natural. . Pastikan bahwa dalam melihat fungsi eksponensial <em>f</em>(<em>x</em>) = <em>ex</em>, <em>e</em> adalah konstanta 2,718281828…, sedangkan <em>x</em> adalah variabel.</p>
-<p>f(x)=ex</p>
-<p>f'(x) = ex <img alt="\rightarrow" src="https://s0.wp.com/latex.php?latex=%5Crightarrow&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> f'(0) = 1</p>
-<p>f”(x) = ex <img alt="\rightarrow" src="https://s0.wp.com/latex.php?latex=%5Crightarrow&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> f”(0) = 1</p>
-<p>f”'(x) = ex <img alt="\rightarrow" src="https://s0.wp.com/latex.php?latex=%5Crightarrow&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> f”'(0) = 1</p>
-<p>Untuk bilangan e2^x</p>
-<p>maka:</p>
-<p><img alt="" src="../11.png" /></p>
-<p><img alt="" src="../12.png" /></p>
-<p>cara perhitungannya adalah sebagai berikut:</p>
-<p><img alt="" src="../13.png" /></p>
-<p><img alt="" src="../14.png" /></p>
-<p>Jika nilai x diganti dengan 4 maka hasilnya adalah 296,99</p>
+                <h2 id="program-metode-newton-raphson-pada-fungsi-non-linear"><strong>Program Metode Newton Raphson Pada Fungsi Non Linear</strong><a class="headerlink" href="#program-metode-newton-raphson-pada-fungsi-non-linear" title="Permanent link">&para;</a></h2>
+<h4 id="metode-newthon-raphson"><strong>Metode Newthon Raphson</strong><a class="headerlink" href="#metode-newthon-raphson" title="Permanent link">&para;</a></h4>
+<p>Metode Newton-Raphson adalah metode pencarian akar suatu fungsi f(x) dengan pendekatan satu titik, dimana fungsi f(x) mempunyai turunan. Metode ini dianggap lebih mudah dari Metode (Bisection Method) karena metode ini menggunakan pendekatan satu titik sebagai titik awal. Semakin dekat titik awal yang kita pilih dengan akar sebenarnya, maka semakin cepat konvergen ke akarnya.</p>
+<p><img alt="" src="../gambar21.png" /></p>
+<p>Prosedur Metode Newton :</p>
+<p><img alt="" src="../gambar23.png" /></p>
+<h4 id="algoritma-metode-newton-repshon"><strong>Algoritma Metode Newton Repshon</strong><a class="headerlink" href="#algoritma-metode-newton-repshon" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="../gambar25.png" /></p>
 <h4 id="listing-program"><strong>Listing Program</strong><a class="headerlink" href="#listing-program" title="Permanent link">&para;</a></h4>
-<p>Untuk membuat program agar dapat mengekspansi bilangan e^2x dengan nilai x=4 hingga nilai menjadi kurang dari 0,001 bisa dibuat dengan listing program sebagai berikut.</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
+<div class="codehilite"><pre><span></span><code>#Program python untuk memperkirakan akar polinomial
 
-<span class="n">x</span><span class="o">=</span><span class="mi">4</span>
-<span class="n">hsl</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">ulang</span> <span class="o">=</span> <span class="mi">1</span>
+#menggunakan metode newton-raphson
 
-<span class="k">while</span> <span class="n">hsl</span><span class="o">&gt;</span><span class="mf">0.001</span><span class="p">:</span>
-    <span class="n">fx</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">fy</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
-        <span class="n">fx</span> <span class="o">+=</span> <span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">i</span><span class="p">)</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="n">i</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+import math
+#f(x) -  fungsi polynomial 
+def f(x):
+    function = (x**3) - (2*x) - 1
+    return function
 
-    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
-        <span class="n">fy</span> <span class="o">+=</span> <span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">j</span><span class="p">)</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="n">j</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+def derivative(x): #berfungsi untuk menemukan turunan dari polinomial
+    h = 0.000001
+    derivative = (f(x + h) - f(x)) / h
+    return derivative
 
-    <span class="n">hsl</span> <span class="o">=</span> <span class="n">fy</span><span class="o">-</span><span class="n">fx</span>
-    <span class="n">a</span><span class="o">+=</span><span class="mi">1</span>
-    <span class="n">b</span><span class="o">+=</span><span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;perulangan ke&quot;</span><span class="p">,</span><span class="n">ulang</span><span class="p">,</span><span class="s2">&quot;= &quot;</span><span class="p">,</span><span class="n">hsl</span><span class="p">)</span>
-    <span class="n">ulang</span><span class="o">+=</span><span class="mi">1</span>
+def newton_raphson(x):
+    return (x - (f(x) / derivative(x)))
+
+
+# p - titik awal mis. nilai lebih dekat ke root
+# n - jmulah iterasi
+
+def perulangan(p, n):
+    print(&quot;Banyak Iterasinya =&quot;,n)
+    x = p
+    for i in range(n):
+        x = newton_raphson(x)
+        print(&quot;perulangan ke-&quot;, i + 1, &quot;=&quot;, x)         
+    return (&quot;&quot;)
+
+
+print(perulangan(1, 12)) #cetakan akar polinomial x ^ 3 - 2x - 1 menggunakan 3 iterasi dan ambil titik awal sebagai 1
 </code></pre></div>
 
 <p>Output:</p>
-<div class="codehilite"><pre><span></span><code>perulangan ke 1 =  1.0
-perulangan ke 2 =  8.0
-perulangan ke 3 =  32.0
-perulangan ke 4 =  85.33333333333333
-perulangan ke 5 =  170.66666666666669
-perulangan ke 6 =  273.0666666666666
-perulangan ke 7 =  364.08888888888896
-perulangan ke 8 =  416.1015873015872
-perulangan ke 9 =  416.1015873015872
-perulangan ke 10 =  369.8680776014112
-perulangan ke 11 =  295.89446208112895
-perulangan ke 12 =  215.195972422639
-perulangan ke 13 =  143.46398161509296
-perulangan ke 14 =  88.28552714774924
-perulangan ke 15 =  50.448872655856576
-perulangan ke 16 =  26.90606541645684
-perulangan ke 17 =  13.45303270822842
-perulangan ke 18 =  6.330838921519444
-perulangan ke 19 =  2.8137061873417224
-perulangan ke 20 =  1.184718394670199
-perulangan ke 21 =  0.47388735786807956
-perulangan ke 22 =  0.18052851728316455
-perulangan ke 23 =  0.06564673355751438
-perulangan ke 24 =  0.022833646454728296
-perulangan ke 25 =  0.0076112154847578495
-perulangan ke 26 =  0.0024355889549951826
-perulangan ke 27 =  0.0007494119863622473
+<div class="codehilite"><pre><span></span><code>Banyak Iterasinya = 12
+perulangan ke- 1 = 2.999994000093219
+perulangan ke- 2 = 2.199996832141079
+perulangan ke- 3 = 1.7808294919560141
+perulangan ke- 4 = 1.6363030634057565
+perulangan ke- 5 = 1.618304588651506
+perulangan ke- 6 = 1.6180340496697716
+perulangan ke- 7 = 1.6180339887499484
+perulangan ke- 8 = 1.6180339887498947
+perulangan ke- 9 = 1.618033988749895
+perulangan ke- 10 = 1.618033988749895
+perulangan ke- 11 = 1.618033988749895
+perulangan ke- 12 = 1.618033988749895
 </code></pre></div>
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-    tex2jax:{inlineMath:[['$$','$$']]}
-    });
-</script>
-
-<script type="text/javascript" async
-        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
                 
                   
                 
@@ -531,27 +439,6 @@ perulangan ke 27 =  0.0007494119863622473
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href=".." title="Profil" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Profil
-              </span>
-            </div>
-          </a>
-        
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
