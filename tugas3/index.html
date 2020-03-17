@@ -323,45 +323,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Tugas 3
-      </label>
-    
     <a href="./" title="Tugas 3" class="md-nav__link md-nav__link--active">
       Tugas 3
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#listing-program" class="md-nav__link">
-    Listing Program :
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
-    Output:
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -382,29 +346,6 @@
   
     
   
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#listing-program" class="md-nav__link">
-    Listing Program :
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
-    Output:
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
   
 </nav>
                   </div>
@@ -442,7 +383,7 @@ $$</p>
 </div>
 <p>Cara penyelesaian dengan menggunakan metode eliminasi Gauss dijabarkan dalam tabel berikut:</p>
 <p><img alt="" src="../31.png" /></p>
-<h3 id="listing-program">Listing Program :<a class="headerlink" href="#listing-program" title="Permanent link">&para;</a></h3>
+<p><strong>Listing Program :</strong></p>
 <div class="codehilite"><pre><span></span><code>import numpy as np
 
 #Membuat Matrix
@@ -483,7 +424,7 @@ for m in range(n-1,-1,-1):
     print(&#39;Nilai X &#39;,m+1, &#39;=&#39;,x[m])
 </code></pre></div>
 
-<h3 id="output">Output:<a class="headerlink" href="#output" title="Permanent link">&para;</a></h3>
+<p><strong>Output:</strong></p>
 <div class="codehilite"><pre><span></span><code>Tentukan ordo Matrix: 3
 Masukkan elemen Matrix: 2
 Masukkan elemen Matrix: 1
@@ -509,7 +450,7 @@ Nilai X  1 = 2.0
 <h1 id="jacobi">Jacobi<a class="headerlink" href="#jacobi" title="Permanent link">&para;</a></h1>
 <p><strong>Metode Iterasi Jacobi</strong> merupakan salah satu bidang analisis numerik yang digunakan untuk menyelesaikan permasalahan persamaan linier dan sering dijumpai dalam berbagai disiplin ilmu. Metode Iterasi Jacobi merupakan salah satu metode tak langsung, yaitu bermula dari suatu hampiran penyelesaian awal dan kemudian berusaha memperbaiki hampiran dalam tak berhingga namun langkah konvergen. Metode Iterasi Jacobi ini digunakan untuk menyelesaikan persamaan linier berukuran besar dan proporsi koefisien nolnya besar.</p>
 <p><img alt="" src="../32.png" /></p>
-<h3 id="listing-program_1">Listing Program:<a class="headerlink" href="#listing-program_1" title="Permanent link">&para;</a></h3>
+<p><strong>Listing Program:</strong></p>
 <div class="codehilite"><pre><span></span><code>from pprint import pprint
 from numpy import array, zeros, diag, diagflat, dot
 import numpy as np
@@ -559,7 +500,7 @@ print(&quot;x:&quot;)
 pprint(sol)
 </code></pre></div>
 
-<h3 id="output_1">Output:<a class="headerlink" href="#output_1" title="Permanent link">&para;</a></h3>
+<p><strong>Output:</strong></p>
 <div class="codehilite"><pre><span></span><code>Masukkan Ordo Matrix: 3
 Masukkan elemen: 2
 Masukkan elemen: 1
@@ -586,7 +527,7 @@ array([34.89370728, 81.70007324,  4.78002167])
 <h1 id="gauss-seidel">Gauss Seidel<a class="headerlink" href="#gauss-seidel" title="Permanent link">&para;</a></h1>
 <p><strong>Metode Gauss-Seidel</strong> digunakan untuk menyelesaikan sistem persamaan linear (SPL) berukuran besar dan proporsi koefisien nolnya besar, seperti sistem-sistem yang banyak ditemukan dalam sistem persamaan diferensial. Metode iterasi Gauss-Seidel dikembangkan dari gagasan metode iterasi pada solusi persamaan tak linier.</p>
 <p>Teknik iterasi jarang digunakan untuk menyelesaikan SPL berukuran kecil karena metode-metode langsung seperti metode eliminasi Gauss lebih efisien daripada metode iteratif. Akan tetapi, untuk SPL berukuran besar dengan persentase elemen nol pada matriks koefisien besar, teknik iterasi lebih efisien daripada metode langsung dalam hal penggunaan memori komputer maupun waktu komputasi. Dengan metode iterasi Gauss-Seidel sesatan pembulatan dapat diperkecil karena dapat meneruskan iterasi sampai solusinya seteliti mungkin sesuai dengan batas sesatan yang diperbolehkan.</p>
-<h3 id="listing-program_2">Listing Program:<a class="headerlink" href="#listing-program_2" title="Permanent link">&para;</a></h3>
+<p><strong>Listing Program:</strong></p>
 <div class="codehilite"><pre><span></span><code>def seidel(a, x ,b): 
     #Mencari Panjang Matrix  
     n = len(a)               
@@ -620,7 +561,7 @@ for i in range(0, 100):
     print(x)                 
 </code></pre></div>
 
-<h3 id="output_2">Output:<a class="headerlink" href="#output_2" title="Permanent link">&para;</a></h3>
+<p><strong>Output:</strong></p>
 <div class="codehilite"><pre><span></span><code>Masukkan Panjang Matrix: 3
 Masukkan a1,1: 4
 Masukkan a1,2: -1
