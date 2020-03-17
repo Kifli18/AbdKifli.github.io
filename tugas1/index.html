@@ -42,7 +42,7 @@
     
     
       
-        <title>Tugas 1 (Deret Maclaurin) - Tugas Komputasi Numerik</title>
+        <title>Tugas 1 - Tugas Komputasi Numerik</title>
       
     
     
@@ -142,7 +142,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Tugas 1 (Deret Maclaurin)
+                Tugas 1
               
             </span>
           
@@ -228,6 +228,8 @@
       
         
       
+        
+      
     </ul>
   </div>
 </nav>
@@ -296,11 +298,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Tugas 1 (Deret Maclaurin)
+        Tugas 1
       </label>
     
-    <a href="./" title="Tugas 1 (Deret Maclaurin)" class="md-nav__link md-nav__link--active">
-      Tugas 1 (Deret Maclaurin)
+    <a href="./" title="Tugas 1" class="md-nav__link md-nav__link--active">
+      Tugas 1
     </a>
     
       
@@ -362,8 +364,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../tugas2/" title="Tugas 2 (Newton Rapshon)" class="md-nav__link">
-      Tugas 2 (Newton Rapshon)
+    <a href="../tugas2/" title="Tugas 2" class="md-nav__link">
+      Tugas 2
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tugas3/" title="Tugas 3" class="md-nav__link">
+      Tugas 3
     </a>
   </li>
 
@@ -437,31 +451,37 @@
               
                 
                 
-                  <h1>Tugas 1 (Deret Maclaurin)</h1>
+                  <h1>Tugas 1</h1>
                 
                 <h2 id="deret-maclaurin"><strong>DERET MACLAURIN</strong><a class="headerlink" href="#deret-maclaurin" title="Permanent link">&para;</a></h2>
 <p>Deret MacLaurin merupakan suatu fungsi f(x) yang memiliki turunan f'(x), f”(x), f”'(x), dan seterusnya yang kontinyu dalam interval I dan a, x I maka untuk x disekitar a yaitu |x – a| &lt; , f(x) dapat diekspansi kedalam Deret Taylor. </p>
 <p>contoh Deret Maclaurin  :
 $$
-f(x) = f(0)+f'(0) \frac{x}{1!}+f''(0) \frac{x^2}{2!}+f'''(0) \frac{x^3}{3!}+...
+f(x) = f(0)+ \frac{f^1(0)x}{1!}+ \frac{f<sup>2(0)x</sup>2}{2!}+.......+ \frac{f<sup>n(0)x</sup>n}{n!}
+$$</p>
+<p>atau juga bisa disebut dengan:
+$$
+f(x)=\frac{d^2f(x)}{d(x)}
 $$</p>
 <h4 id="soal"><strong>Soal</strong><a class="headerlink" href="#soal" title="Permanent link">&para;</a></h4>
 <p>tentukan e^2x dengan x = 4 dan ekspansi eror &lt; 0,001.</p>
 <h4 id="penyelesaian"><strong>Penyelesaian</strong><a class="headerlink" href="#penyelesaian" title="Permanent link">&para;</a></h4>
-<p><em>Perhitungan e^2x</em></p>
 <p>Dalam banyak masalah terapan, pilihan basis yang mudah digunakan adalah bilangan irasional <em>e = 2,718281828...</em></p>
 <p>Bilangan ini disebut <em>basis natural</em>. Fungsi <em>f</em>(<em>x</em>) = <em>ex</em> disebut sebagai fungsi eksponensial natural. . Pastikan bahwa dalam melihat fungsi eksponensial <em>f</em>(<em>x</em>) = <em>ex</em>, <em>e</em> adalah konstanta 2,718281828…, sedangkan <em>x</em> adalah variabel.</p>
-<p>f(x)=ex</p>
-<p>f'(x) = ex <img alt="\rightarrow" src="https://s0.wp.com/latex.php?latex=%5Crightarrow&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> f'(0) = 1</p>
-<p>f”(x) = ex <img alt="\rightarrow" src="https://s0.wp.com/latex.php?latex=%5Crightarrow&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> f”(0) = 1</p>
-<p>f”'(x) = ex <img alt="\rightarrow" src="https://s0.wp.com/latex.php?latex=%5Crightarrow&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> f”'(0) = 1</p>
-<p>Untuk bilangan e2^x</p>
-<p>maka:</p>
 <p><img alt="" src="../11.png" /></p>
 <p><img alt="" src="../12.png" /></p>
-<p>cara perhitungannya adalah sebagai berikut:</p>
-<p><img alt="" src="../13.png" /></p>
-<p><img alt="" src="../14.png" /></p>
+<p>cara perhitungannya adalah sebagai berikut:
+$$
+f(x) = f(0)+ \frac{f^1(0)}{1!}x+ \frac{f<sup>2(0)}{2!}x</sup>2+\frac{f<sup>3(0)}{3!}x</sup>3+\frac{f<sup>4(0)}{4!}x</sup>4+.......+ \frac{f<sup>n(0)}{n!}x</sup>n
+$$</p>
+<div>
+<div class="MathJax_Preview">
+f(x) = f(0)+ \frac{2}{1!}x+ \frac{4}{2!}x^2+\frac{8}{3!}x^3+\frac{16}{4!}x^4+.......+ \frac{2^n}{n!}x^n
+</div>
+<script type="math/tex; mode=display">
+f(x) = f(0)+ \frac{2}{1!}x+ \frac{4}{2!}x^2+\frac{8}{3!}x^3+\frac{16}{4!}x^4+.......+ \frac{2^n}{n!}x^n
+</script>
+</div>
 <p>Jika nilai x diganti dengan 4 maka hasilnya adalah 296,99</p>
 <h4 id="listing-program"><strong>Listing Program</strong><a class="headerlink" href="#listing-program" title="Permanent link">&para;</a></h4>
 <p>Untuk membuat program agar dapat mengekspansi bilangan e^2x dengan nilai x=4 hingga nilai menjadi kurang dari 0,001 bisa dibuat dengan listing program sebagai berikut.</p>
@@ -564,13 +584,13 @@ perulangan ke 27 =  0.0007494119863622473
           </a>
         
         
-          <a href="../tugas2/" title="Tugas 2 (Newton Rapshon)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../tugas2/" title="Tugas 2" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Tugas 2 (Newton Rapshon)
+                Tugas 2
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
