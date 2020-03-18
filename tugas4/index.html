@@ -13,7 +13,7 @@
         <meta name="description" content="Tugas Komputasi Numerik">
       
       
-        <link rel="canonical" href="https://github.com/Kifli18/tugas2/">
+        <link rel="canonical" href="https://github.com/Kifli18/tugas4/">
       
       
         <meta name="author" content="Abd. Kifli(180411100033)">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Tugas 2 - Tugas Komputasi Numerik</title>
+        <title>Tugas 4 - Tugas Komputasi Numerik</title>
       
     
     
@@ -116,7 +116,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#program-metode-newton-raphson-pada-fungsi-non-linear" tabindex="0" class="md-skip">
+      <a href="#recursive-trapezoid" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -142,7 +142,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Tugas 2
+                Tugas 4
               
             </span>
           
@@ -303,72 +303,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Tugas 2
-      </label>
-    
-    <a href="./" title="Tugas 2" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../tugas2/" title="Tugas 2" class="md-nav__link">
       Tugas 2
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#program-metode-newton-raphson-pada-fungsi-non-linear" class="md-nav__link">
-    Program Metode Newton Raphson Pada Fungsi Non Linear
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#metode-newthon-raphson" class="md-nav__link">
-    Metode Newthon Raphson
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#algoritma-metode-newton-repshon" class="md-nav__link">
-    Algoritma Metode Newton Repshon
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#listing-program" class="md-nav__link">
-    Listing Program
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -388,11 +327,45 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../tugas4/" title="Tugas 4" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Tugas 4
+      </label>
+    
+    <a href="./" title="Tugas 4" class="md-nav__link md-nav__link--active">
       Tugas 4
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recursive-trapezoid" class="md-nav__link">
+    Recursive Trapezoid
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -415,36 +388,9 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#program-metode-newton-raphson-pada-fungsi-non-linear" class="md-nav__link">
-    Program Metode Newton Raphson Pada Fungsi Non Linear
+  <a href="#recursive-trapezoid" class="md-nav__link">
+    Recursive Trapezoid
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#metode-newthon-raphson" class="md-nav__link">
-    Metode Newthon Raphson
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#algoritma-metode-newton-repshon" class="md-nav__link">
-    Algoritma Metode Newton Repshon
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#listing-program" class="md-nav__link">
-    Listing Program
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -465,65 +411,70 @@
               
                 
                 
-                  <h1>Tugas 2</h1>
+                  <h1>Tugas 4</h1>
                 
-                <h2 id="program-metode-newton-raphson-pada-fungsi-non-linear"><strong>Program Metode Newton Raphson Pada Fungsi Non Linear</strong><a class="headerlink" href="#program-metode-newton-raphson-pada-fungsi-non-linear" title="Permanent link">&para;</a></h2>
-<h4 id="metode-newthon-raphson"><strong>Metode Newthon Raphson</strong><a class="headerlink" href="#metode-newthon-raphson" title="Permanent link">&para;</a></h4>
-<p>Metode Newton-Raphson adalah metode pencarian akar suatu fungsi f(x) dengan pendekatan satu titik, dimana fungsi f(x) mempunyai turunan. Metode ini dianggap lebih mudah dari Metode (Bisection Method) karena metode ini menggunakan pendekatan satu titik sebagai titik awal. Semakin dekat titik awal yang kita pilih dengan akar sebenarnya, maka semakin cepat konvergen ke akarnya.</p>
-<p><img alt="" src="../gambar21.png" /></p>
-<p>Prosedur Metode Newton :</p>
-<p><img alt="" src="../gambar23.png" /></p>
-<h4 id="algoritma-metode-newton-repshon"><strong>Algoritma Metode Newton Repshon</strong><a class="headerlink" href="#algoritma-metode-newton-repshon" title="Permanent link">&para;</a></h4>
-<p><img alt="" src="../gambar25.png" /></p>
-<h4 id="listing-program"><strong>Listing Program</strong><a class="headerlink" href="#listing-program" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><code>#Program python untuk memperkirakan akar polinomial
+                <h2 id="recursive-trapezoid"><strong>Recursive Trapezoid</strong><a class="headerlink" href="#recursive-trapezoid" title="Permanent link">&para;</a></h2>
+<p>Metode trapesium merupakan metode integrasi numerik yang didasarkan pada penjumlahan segmen-segmen berbentuk trapesium. Apabila sebuah integral didekati dengan metode trapesium dengan satu segmen saja. Maka dapat dituliskan persamaan sebagai berikut :</p>
+<p><img alt="" src="../44.png" /></p>
+<p>Aturan trapesium bekerja dengan cara mendekati daerah bawah grafik fungsi f(x) sebagai trapesium dan menghitung luas daerah yang terasir.</p>
+<p>Estimasi berdasarkan satu interval :</p>
+<p><img alt="" src="../45.png" /></p>
+<p>Estimasi berdasarkan 2 interval :</p>
+<p><img alt="" src="../46.png" /></p>
+<ul>
+<li><em>R(0,0)R(0,0)</em> : berdasarkan pada estimasi sebelumnya dan</li>
+<li><em>h[f(a)+(h)]h[f(a)+(h)]</em> : berdasarkan pada titik baru</li>
+</ul>
+<p><strong>Listing Program:</strong></p>
+<div class="codehilite"><pre><span></span><code>#Mendefinisikan fungsi
+def fungsi (x):
+    y =1/(1+x)
+    return y
+print(&quot; &quot;)
+print(&quot;Rumus yang digunakan adalah = f(x) = 1/(1+x)&quot;)
+print(&quot; &quot;)
 
-#menggunakan metode newton-raphson
+a=float(input(&quot;Inputkan batas bawah   : &quot;))
+b=float(input(&quot;Masukkan batas atas : &quot;))
+c=int (input(&quot;Masukkan n : &quot;))
+error = []
+print(&quot; &quot;)
 
-import math
-#f(x) -  fungsi polynomial 
-def f(x):
-    function = (x**3) - (2*x) - 1
-    return function
+for iterasi in range (0,c):
+    n= 2**iterasi
+    h= (b-a)/n
 
-def derivative(x): #berfungsi untuk menemukan turunan dari polinomial
-    h = 0.000001
-    derivative = (f(x + h) - f(x)) / h
-    return derivative
-
-def newton_raphson(x):
-    return (x - (f(x) / derivative(x)))
-
-
-# p - titik awal mis. nilai lebih dekat ke root
-# n - jmulah iterasi
-
-def perulangan(p, n):
-    print(&quot;Banyak Iterasinya =&quot;,n)
-    x = p
-    for i in range(n):
-        x = newton_raphson(x)
-        print(&quot;perulangan ke-&quot;, i + 1, &quot;=&quot;, x)         
-    return (&quot;&quot;)
-
-
-print(perulangan(1, 12)) #cetakan akar polinomial x ^ 3 - 2x - 1 menggunakan 3 iterasi dan ambil titik awal sebagai 1
+    xi = a
+    y = 0
+    for i in range (1,n):
+        xi =xi+h
+        y+= fungsi (xi)
+    trapezoid =((h)*(fungsi (a) + (2*y) + fungsi (b)))/2
+    error.append (trapezoid)
+    print (iterasi+1,&quot;\t\t&quot; ,n, &quot;\t\t&quot;,trapezoid)
+print(error[iterasi -1])
+print(error[iterasi])
+hasil =(error[iterasi -1]-error[iterasi])
+print(&quot;estimasi error =&quot;,hasil)
 </code></pre></div>
 
-<p>Output:</p>
-<div class="codehilite"><pre><span></span><code>Banyak Iterasinya = 12
-perulangan ke- 1 = 2.999994000093219
-perulangan ke- 2 = 2.199996832141079
-perulangan ke- 3 = 1.7808294919560141
-perulangan ke- 4 = 1.6363030634057565
-perulangan ke- 5 = 1.618304588651506
-perulangan ke- 6 = 1.6180340496697716
-perulangan ke- 7 = 1.6180339887499484
-perulangan ke- 8 = 1.6180339887498947
-perulangan ke- 9 = 1.618033988749895
-perulangan ke- 10 = 1.618033988749895
-perulangan ke- 11 = 1.618033988749895
-perulangan ke- 12 = 1.618033988749895
+<p><strong>Output:</strong></p>
+<div class="codehilite"><pre><span></span><code>Rumus yang digunakan adalah = f(x) = 1/(1+x)
+
+Inputkan batas bawah   : 2
+Masukkan batas atas : 4
+Masukkan n : 7
+
+1        1       0.5333333333333333
+2        2       0.5166666666666666
+3        4       0.5123015873015873
+4        8       0.5111956455996705
+5        16          0.5109181945162025
+6        32          0.5108487705480642
+7        64          0.5108314107176335
+0.5108487705480642
+0.5108314107176335
+estimasi error = 1.735983043071876e-05
 </code></pre></div>
                 
                   
@@ -546,7 +497,7 @@ perulangan ke- 12 = 1.618033988749895
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../tugas1/" title="Tugas 1" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../tugas3/" title="Tugas 3" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -555,25 +506,11 @@ perulangan ke- 12 = 1.618033988749895
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Tugas 1
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../tugas3/" title="Tugas 3" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
                 Tugas 3
               </span>
             </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
           </a>
+        
         
       </nav>
     </div>
