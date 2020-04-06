@@ -232,6 +232,8 @@
       
         
       
+        
+      
     </ul>
   </div>
 </nav>
@@ -356,6 +358,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    Output:
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -392,6 +401,18 @@
   <li class="md-nav__item">
     <a href="../tugas4/" title="Tugas 4" class="md-nav__link">
       Tugas 4
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tugas5/" title="Tugas 5" class="md-nav__link">
+      Tugas 5
     </a>
   </li>
 
@@ -443,6 +464,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    Output:
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -468,49 +496,51 @@
                   <h1>Tugas 2</h1>
                 
                 <h2 id="program-metode-newton-raphson-pada-fungsi-non-linear"><strong>Program Metode Newton Raphson Pada Fungsi Non Linear</strong><a class="headerlink" href="#program-metode-newton-raphson-pada-fungsi-non-linear" title="Permanent link">&para;</a></h2>
-<h4 id="metode-newthon-raphson"><strong>Metode Newthon Raphson</strong><a class="headerlink" href="#metode-newthon-raphson" title="Permanent link">&para;</a></h4>
-<p>Metode Newton-Raphson adalah metode pencarian akar suatu fungsi f(x) dengan pendekatan satu titik, dimana fungsi f(x) mempunyai turunan. Metode ini dianggap lebih mudah dari Metode (Bisection Method) karena metode ini menggunakan pendekatan satu titik sebagai titik awal. Semakin dekat titik awal yang kita pilih dengan akar sebenarnya, maka semakin cepat konvergen ke akarnya.</p>
+<h3 id="metode-newthon-raphson"><strong>Metode Newthon Raphson</strong><a class="headerlink" href="#metode-newthon-raphson" title="Permanent link">&para;</a></h3>
+<p>Metode Newton-Raphson adalah metode pencarian akar suatu fungsi <span><span class="MathJax_Preview">f(x)</span><script type="math/tex">f(x)</script></span> dengan pendekatan satu titik, dimana fungsi <span><span class="MathJax_Preview">f(x)</span><script type="math/tex">f(x)</script></span> mempunyai turunan. Metode ini dianggap lebih mudah dari Metode (Bisection Method) karena metode ini menggunakan pendekatan satu titik sebagai titik awal. Semakin dekat titik awal yang kita pilih dengan akar sebenarnya, maka semakin cepat konvergen ke akarnya.</p>
 <p><img alt="" src="../gambar21.png" /></p>
 <p>Prosedur Metode Newton :</p>
+<p>menentukan <span><span class="MathJax_Preview">x_0</span><script type="math/tex">x_0</script></span> sebagai titik awal, kemudian menarik garis lurus (misal garis imath ) yang menyinggung titik <span><span class="MathJax_Preview">f(x_0)</span><script type="math/tex">f(x_0)</script></span>. Hal ini berakibat garis imath memotong sumbu <span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span> di titik <span><span class="MathJax_Preview">x_1</span><script type="math/tex">x_1</script></span> Setelah itu diulangi langkah sebelumnya tapi sekarang <span><span class="MathJax_Preview">x_1</span><script type="math/tex">x_1</script></span> dianggap sebagai titik awalnya. Dari mengulang langkah-langkah sebelumnya akan mendapatkan <span><span class="MathJax_Preview">x_2 , x_3 , ... , x_n</span><script type="math/tex">x_2 , x_3 , ... , x_n</script></span> dengan <span><span class="MathJax_Preview">x_n</span><script type="math/tex">x_n</script></span> yang diperoleh adalah bilangan riil yang merupakan akar atau mendekati akar yang sebenarnya.</p>
+<p>Perhatikan gambar diatas untuk menurunkan rumus <strong>Metode Newton-Raphson</strong></p>
 <p><img alt="" src="../gambar23.png" /></p>
-<h4 id="algoritma-metode-newton-repshon"><strong>Algoritma Metode Newton Repshon</strong><a class="headerlink" href="#algoritma-metode-newton-repshon" title="Permanent link">&para;</a></h4>
+<h3 id="algoritma-metode-newton-repshon"><strong>Algoritma Metode Newton Repshon</strong><a class="headerlink" href="#algoritma-metode-newton-repshon" title="Permanent link">&para;</a></h3>
 <p><img alt="" src="../gambar25.png" /></p>
-<h4 id="listing-program"><strong>Listing Program</strong><a class="headerlink" href="#listing-program" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><code>#Program python untuk memperkirakan akar polinomial
+<h3 id="listing-program"><strong>Listing Program</strong><a class="headerlink" href="#listing-program" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="c1">#Program python untuk memperkirakan akar polinomial</span>
 
-#menggunakan metode newton-raphson
+<span class="c1">#menggunakan metode newton-raphson</span>
 
-import math
-#f(x) -  fungsi polynomial 
-def f(x):
-    function = (x**3) - (2*x) - 1
-    return function
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="c1">#f(x) -  fungsi polynomial </span>
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">function</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">function</span>
 
-def derivative(x): #berfungsi untuk menemukan turunan dari polinomial
-    h = 0.000001
-    derivative = (f(x + h) - f(x)) / h
-    return derivative
+<span class="k">def</span> <span class="nf">derivative</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="c1">#berfungsi untuk menemukan turunan dari polinomial</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="mf">0.000001</span>
+    <span class="n">derivative</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">h</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="o">/</span> <span class="n">h</span>
+    <span class="k">return</span> <span class="n">derivative</span>
 
-def newton_raphson(x):
-    return (x - (f(x) / derivative(x)))
-
-
-# p - titik awal mis. nilai lebih dekat ke root
-# n - jmulah iterasi
-
-def perulangan(p, n):
-    print(&quot;Banyak Iterasinya =&quot;,n)
-    x = p
-    for i in range(n):
-        x = newton_raphson(x)
-        print(&quot;perulangan ke-&quot;, i + 1, &quot;=&quot;, x)         
-    return (&quot;&quot;)
+<span class="k">def</span> <span class="nf">newton_raphson</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="n">derivative</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
 
 
-print(perulangan(1, 12)) #cetakan akar polinomial x ^ 3 - 2x - 1 menggunakan 3 iterasi dan ambil titik awal sebagai 1
+<span class="c1"># p - titik awal mis. nilai lebih dekat ke root</span>
+<span class="c1"># n - jmulah iterasi</span>
+
+<span class="k">def</span> <span class="nf">perulangan</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Banyak Iterasinya =&quot;</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">p</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">newton_raphson</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;perulangan ke-&quot;</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>         
+    <span class="k">return</span> <span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="n">perulangan</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span> <span class="c1">#cetakan akar polinomial x ^ 3 - 2x - 1 menggunakan 3 iterasi dan ambil titik awal sebagai 1</span>
 </code></pre></div>
 
-<p>Output:</p>
+<h3 id="output"><strong>Output:</strong><a class="headerlink" href="#output" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>Banyak Iterasinya = 12
 perulangan ke- 1 = 2.999994000093219
 perulangan ke- 2 = 2.199996832141079

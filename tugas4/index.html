@@ -232,6 +232,8 @@
       
         
       
+        
+      
     </ul>
   </div>
 </nav>
@@ -358,6 +360,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#listing-program" class="md-nav__link">
+    Listing Program:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    Output:
+  </a>
+  
+</li>
+      
       
       
       
@@ -366,6 +382,18 @@
   
 </nav>
     
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tugas5/" title="Tugas 5" class="md-nav__link">
+      Tugas 5
+    </a>
   </li>
 
     
@@ -390,6 +418,20 @@
         <li class="md-nav__item">
   <a href="#recursive-trapezoid" class="md-nav__link">
     Recursive Trapezoid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#listing-program" class="md-nav__link">
+    Listing Program:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    Output:
   </a>
   
 </li>
@@ -425,40 +467,40 @@
 <li><em>R(0,0)R(0,0)</em> : berdasarkan pada estimasi sebelumnya dan</li>
 <li><em>h[f(a)+(h)]h[f(a)+(h)]</em> : berdasarkan pada titik baru</li>
 </ul>
-<p><strong>Listing Program:</strong></p>
-<div class="codehilite"><pre><span></span><code>#Mendefinisikan fungsi
-def fungsi (x):
-    y =1/(1+x)
-    return y
-print(&quot; &quot;)
-print(&quot;Rumus yang digunakan adalah = f(x) = 1/(1+x)&quot;)
-print(&quot; &quot;)
+<h2 id="listing-program"><strong>Listing Program:</strong><a class="headerlink" href="#listing-program" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="c1">#Mendefinisikan fungsi</span>
+<span class="k">def</span> <span class="nf">fungsi</span> <span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">y</span> <span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">y</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rumus yang digunakan adalah = f(x) = 1/(1+x)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
 
-a=float(input(&quot;Inputkan batas bawah   : &quot;))
-b=float(input(&quot;Masukkan batas atas : &quot;))
-c=int (input(&quot;Masukkan n : &quot;))
-error = []
-print(&quot; &quot;)
+<span class="n">a</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Inputkan batas bawah   : &quot;</span><span class="p">))</span>
+<span class="n">b</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan batas atas : &quot;</span><span class="p">))</span>
+<span class="n">c</span><span class="o">=</span><span class="nb">int</span> <span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan n : &quot;</span><span class="p">))</span>
+<span class="n">error</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
 
-for iterasi in range (0,c):
-    n= 2**iterasi
-    h= (b-a)/n
+<span class="k">for</span> <span class="n">iterasi</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">c</span><span class="p">):</span>
+    <span class="n">n</span><span class="o">=</span> <span class="mi">2</span><span class="o">**</span><span class="n">iterasi</span>
+    <span class="n">h</span><span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="n">n</span>
 
-    xi = a
-    y = 0
-    for i in range (1,n):
-        xi =xi+h
-        y+= fungsi (xi)
-    trapezoid =((h)*(fungsi (a) + (2*y) + fungsi (b)))/2
-    error.append (trapezoid)
-    print (iterasi+1,&quot;\t\t&quot; ,n, &quot;\t\t&quot;,trapezoid)
-print(error[iterasi -1])
-print(error[iterasi])
-hasil =(error[iterasi -1]-error[iterasi])
-print(&quot;estimasi error =&quot;,hasil)
+    <span class="n">xi</span> <span class="o">=</span> <span class="n">a</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">xi</span> <span class="o">=</span><span class="n">xi</span><span class="o">+</span><span class="n">h</span>
+        <span class="n">y</span><span class="o">+=</span> <span class="n">fungsi</span> <span class="p">(</span><span class="n">xi</span><span class="p">)</span>
+    <span class="n">trapezoid</span> <span class="o">=</span><span class="p">((</span><span class="n">h</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">fungsi</span> <span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">y</span><span class="p">)</span> <span class="o">+</span> <span class="n">fungsi</span> <span class="p">(</span><span class="n">b</span><span class="p">)))</span><span class="o">/</span><span class="mi">2</span>
+    <span class="n">error</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">trapezoid</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="n">iterasi</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="s2">&quot;</span><span class="se">\t\t</span><span class="s2">&quot;</span> <span class="p">,</span><span class="n">n</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t\t</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">trapezoid</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">error</span><span class="p">[</span><span class="n">iterasi</span> <span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">error</span><span class="p">[</span><span class="n">iterasi</span><span class="p">])</span>
+<span class="n">hasil</span> <span class="o">=</span><span class="p">(</span><span class="n">error</span><span class="p">[</span><span class="n">iterasi</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">error</span><span class="p">[</span><span class="n">iterasi</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;estimasi error =&quot;</span><span class="p">,</span><span class="n">hasil</span><span class="p">)</span>
 </code></pre></div>
 
-<p><strong>Output:</strong></p>
+<h2 id="output"><strong>Output:</strong><a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>Rumus yang digunakan adalah = f(x) = 1/(1+x)
 
 Inputkan batas bawah   : 2
@@ -511,6 +553,20 @@ estimasi error = 1.735983043071876e-05
             </div>
           </a>
         
+        
+          <a href="../tugas5/" title="Tugas 5" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Tugas 5
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
