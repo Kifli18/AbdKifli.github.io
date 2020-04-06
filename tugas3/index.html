@@ -324,12 +324,51 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Tugas 3
+      </label>
     
     <a href="./" title="Tugas 3" class="md-nav__link md-nav__link--active">
       Tugas 3
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#eliminasi-gauss" class="md-nav__link">
+    Eliminasi Gauss
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jacobi" class="md-nav__link">
+    Jacobi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gauss-seidel" class="md-nav__link">
+    Gauss Seidel
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -372,8 +411,36 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#eliminasi-gauss" class="md-nav__link">
+    Eliminasi Gauss
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jacobi" class="md-nav__link">
+    Jacobi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gauss-seidel" class="md-nav__link">
+    Gauss Seidel
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
   
 </nav>
                   </div>
@@ -385,6 +452,8 @@
             <article class="md-content__inner md-typeset">
               
                 
+                
+                  <h1>Tugas 3</h1>
                 
                 <h2 id="eliminasi-gauss"><strong>Eliminasi Gauss</strong><a class="headerlink" href="#eliminasi-gauss" title="Permanent link">&para;</a></h2>
 <p><strong>Metode eliminasi gauss</strong> termasuk dalam metode penyelesaian persamaan linear dengan cara langsung. Inti dari metode ini adalah membawa persamaan kedalam bentuk matriks dan menyederhanakan matriks menjadi bentuk segitiga atas. Setelah mendapat bentuk matriks tersebut dilakukan subtitusi balik untuk mendapat nilai dari akar persamaan tadi. Untuk lebih jelasnya kita perhatikan contoh berikut.</p>
@@ -552,7 +621,7 @@ x:
 array([34.89370728, 81.70007324,  4.78002167])
 </code></pre></div>
 
-<h1 id="gauss-seidel"><strong>Gauss Seidel</strong><a class="headerlink" href="#gauss-seidel" title="Permanent link">&para;</a></h1>
+<h2 id="gauss-seidel"><strong>Gauss Seidel</strong><a class="headerlink" href="#gauss-seidel" title="Permanent link">&para;</a></h2>
 <p><strong>Metode Gauss-Seidel</strong> digunakan untuk menyelesaikan sistem persamaan linear (SPL) berukuran besar dan proporsi koefisien nolnya besar, seperti sistem-sistem yang banyak ditemukan dalam sistem persamaan diferensial. Metode iterasi Gauss-Seidel dikembangkan dari gagasan metode iterasi pada solusi persamaan tak linier.</p>
 <p>Teknik iterasi jarang digunakan untuk menyelesaikan SPL berukuran kecil karena metode-metode langsung seperti metode eliminasi Gauss lebih efisien daripada metode iteratif. Akan tetapi, untuk SPL berukuran besar dengan persentase elemen nol pada matriks koefisien besar, teknik iterasi lebih efisien daripada metode langsung dalam hal penggunaan memori komputer maupun waktu komputasi. Dengan metode iterasi Gauss-Seidel sesatan pembulatan dapat diperkecil karena dapat meneruskan iterasi sampai solusinya seteliti mungkin sesuai dengan batas sesatan yang diperbolehkan.</p>
 <p><strong>Listing Program:</strong></p>
